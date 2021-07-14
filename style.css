@@ -16,6 +16,39 @@ main{
 }
 
 /* player section start */
+
+header{
+    background-color:#2D25A0;
+}
+.banner-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 100px;
+    margin:0 150px;
+    padding: 100px 0;
+}
+.banner-left h1{
+    font-size: 64px;
+    font-weight:700;
+    color: white;
+}
+.banner-left a{
+    font-size: 16px;
+    font-weight:500;
+    color: white;
+    background-color: #E02C6D;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top:20px;
+}
+.icon-spacing{
+    padding-left: 8px;
+}
+.banner-right img{
+    width: 100%;
+    height: auto;
+}
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -87,7 +120,20 @@ padding-top: 10px;
 
 /*Responsive For mobile devices */
 @media only screen and (max-width:688px) {
-  main{
+    .banner-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 50px;
+        margin:0 20px;
+        padding:65px 16px;
+    }
+    .banner-left h1{
+        font-size:36px;
+        font-weight:700;
+        color: white;
+    }
+   
+    main{
       margin: 45px 15px;
   }
     .players{
