@@ -23,6 +23,14 @@ main{
     padding: 10px 20px;
     display: inline-block;
     margin-top:20px;
+    overflow: hidden;
+}
+/* animation with transform transition */
+.button a:hover{
+    background-color:red;
+    transition:1s;
+    transform: scale(1.2);
+    transform-origin: center;
 }
 .icon-spacing{
     padding-left: 8px;
@@ -48,6 +56,12 @@ header{
 .banner-right img{
     width: 100%;
     height: auto;
+    overflow: hidden;
+}
+.banner-right:hover img{
+    transition:2.5s;
+    transform: scale(1.2) rotate(360deg);
+    transform-origin: center;
 }
 .players{
     display: grid;
