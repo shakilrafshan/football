@@ -14,6 +14,7 @@ body{
 main{
     margin: 70px 180px;
 }
+/* All buttons css start*/
 .button a{
     font-size: 16px;
     font-weight:500;
@@ -35,7 +36,9 @@ main{
 .icon-spacing{
     padding-left: 8px;
 }
-/* player section start */
+/* All buttons css finish*/
+
+/* header area  */
 
 header{
     background-color:#2D25A0;
@@ -45,7 +48,7 @@ header{
     grid-template-columns: repeat(2,1fr);
     grid-column-gap: 100px;
     margin:0 150px;
-    padding: 100px 0;
+    padding: 120px 0;
 }
 .banner-left h1{
     font-size: 64px;
@@ -63,6 +66,9 @@ header{
     transform: scale(1.2) rotate(360deg);
     transform-origin: center;
 }
+/* header area finish */
+
+/* player section start */
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -115,6 +121,11 @@ width: 100%;
 }
 /* highlights section finish */
 
+/* ...................
+extra section start
+..................... */
+
+
 /* news section start */
 
 .all-news{
@@ -136,6 +147,8 @@ width: 100%;
 }
 
 /* news section finish */
+
+/* awards section start */
 .awards-section .title{
     margin: 40px 0;
 }
@@ -160,7 +173,10 @@ width: 100%;
     width: 150px;
     height: 220px;
 }
-
+/* awards section finish */
+/* ...................
+extra section finish
+..................... */
 /* footer section start */
 .footer-logo{
     width: 100%;
@@ -197,7 +213,7 @@ width: 100%;
     font-weight: 400px;
     margin-bottom: 60px;
 }
-/* responsive using media query */
+/* responsive area using media query */
 
 /*Responsive For mobile devices */
 @media only screen and (max-width:688px) {
@@ -230,8 +246,6 @@ width: 100%;
     width: 100%;
     height: auto;
 }
-
-/* highlights section start */
 .highlights-section,.all-news{
 
     grid-template-columns: repeat(1, 1fr);
@@ -242,10 +256,13 @@ width: 100%;
 .all-awards{
     display: grid;
     grid-template-columns: repeat(1,1fr);
-  
-    grid-row-gap: 30px;
+   grid-row-gap: 30px;
+   
 }
-
+.all-awards img{
+    width: 100%;
+    height:350px;
+}
 .hightlights-image,.news img{
 width: 100%;
 }
